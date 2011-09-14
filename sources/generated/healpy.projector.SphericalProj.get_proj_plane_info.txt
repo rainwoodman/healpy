@@ -1,0 +1,6 @@
+healpy.projector.SphericalProj.get_proj_plane_info
+==================================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: SphericalProj.get_proj_plane_info

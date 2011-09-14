@@ -1,0 +1,6 @@
+healpy.projaxes.GnomonicAxes.projmap
+====================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: GnomonicAxes.projmap

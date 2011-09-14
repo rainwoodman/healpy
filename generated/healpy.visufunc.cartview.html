@@ -1,0 +1,238 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>healpy.visufunc.cartview &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="../static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="../index.html" />
+    <link rel="up" title="visufunc – Visualisation" href="../healpy_visu.html" />
+    <link rel="next" title="healpy.visufunc.graticule" href="healpy.visufunc.graticule.html" />
+    <link rel="prev" title="healpy.visufunc.gnomview" href="healpy.visufunc.gnomview.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="healpy.visufunc.graticule.html" title="healpy.visufunc.graticule"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="healpy.visufunc.gnomview.html" title="healpy.visufunc.gnomview"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_visu.html" accesskey="U"><tt class="docutils literal docutils literal"><span class="pre">visufunc</span></tt> &#8211; Visualisation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="healpy-visufunc-cartview">
+<h1>healpy.visufunc.cartview<a class="headerlink" href="#healpy-visufunc-cartview" title="Permalink to this headline">¶</a></h1>
+<dl class="staticmethod">
+<dt id="healpy.visufunc.cartview">
+<em class="property">static </em><tt class="descclassname">visufunc.</tt><tt class="descname">cartview</tt><big>(</big><em>map=None</em>, <em>fig=None</em>, <em>rot=None</em>, <em>zat=None</em>, <em>coord=None</em>, <em>unit=''</em>, <em>xsize=800</em>, <em>ysize=None</em>, <em>lonra=None</em>, <em>latra=None</em>, <em>title='Cartesian view'</em>, <em>nest=False</em>, <em>remove_dip=False</em>, <em>remove_mono=False</em>, <em>gal_cut=0</em>, <em>min=None</em>, <em>max=None</em>, <em>flip='astro'</em>, <em>format='%.3g'</em>, <em>cbar=True</em>, <em>cmap=None</em>, <em>norm=None</em>, <em>aspect=None</em>, <em>hold=False</em>, <em>sub=None</em>, <em>margins=None</em>, <em>notext=False</em><big>)</big><a class="headerlink" href="#healpy.visufunc.cartview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot an healpix map (given as an array) in Cartesian projection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters :</th><td class="field-body"><p class="first"><strong>map</strong> : float, array-like or None</p>
+<blockquote>
+<div><p>An array containing the map.
+If None, will display a blank map, useful for overplotting.</p>
+</div></blockquote>
+<p><strong>fig</strong> : int or None, optional</p>
+<blockquote>
+<div><p>The figure number to use. Default: create a new figure</p>
+</div></blockquote>
+<p><strong>rot</strong> : scalar or sequence, optional</p>
+<blockquote>
+<div><p>Describe the rotation to apply.
+In the form (lon, lat, psi) (unit: degrees) : the point at
+longitude <em>lon</em> and latitude <em>lat</em> will be at the center. An additional rotation
+of angle <em>psi</em> around this direction is applied.</p>
+</div></blockquote>
+<p><strong>coord</strong> : sequence of character, optional</p>
+<blockquote>
+<div><p>Either one of &#8216;G&#8217;, &#8216;E&#8217; or &#8216;C&#8217; to describe the coordinate
+system of the map, or a sequence of 2 of these to rotate
+the map from the first to the second coordinate system.</p>
+</div></blockquote>
+<p><strong>unit</strong> : str, optional</p>
+<blockquote>
+<div><p>A text describing the unit of the data. Default: &#8216;&#8217;</p>
+</div></blockquote>
+<p><strong>xsize</strong> : int, optional</p>
+<blockquote>
+<div><p>The size of the image. Default: 800</p>
+</div></blockquote>
+<p><strong>lonra</strong> : sequence, optional</p>
+<blockquote>
+<div><p>Range in longitude. Default: [-180,180]</p>
+</div></blockquote>
+<p><strong>latra</strong> : sequence, optional</p>
+<blockquote>
+<div><p>Range in latitude. Default: [-90,90]</p>
+</div></blockquote>
+<p><strong>title</strong> : str, optional</p>
+<blockquote>
+<div><p>The title of the plot. Default: &#8216;Mollweide view&#8217;</p>
+</div></blockquote>
+<p><strong>nest</strong> : bool, optional</p>
+<blockquote>
+<div><p>If True, ordering scheme is NESTED. Default: False (RING)</p>
+</div></blockquote>
+<p><strong>min</strong> : float, optional</p>
+<blockquote>
+<div><p>The minimum range value</p>
+</div></blockquote>
+<p><strong>max</strong> : float, optional</p>
+<blockquote>
+<div><p>The maximum range value</p>
+</div></blockquote>
+<p><strong>flip</strong> : {&#8216;astro&#8217;, &#8216;geo&#8217;}, optional</p>
+<blockquote>
+<div><p>Defines the convention of projection : &#8216;astro&#8217; (default, east towards left, west towards right)
+or &#8216;geo&#8217; (east towards roght, west towards left)</p>
+</div></blockquote>
+<p><strong>remove_dip</strong> : bool, optional</p>
+<blockquote>
+<div><p>If <tt class="xref py py-const xref docutils literal"><span class="pre">True</span></tt>, remove the dipole+monopole</p>
+</div></blockquote>
+<p><strong>remove_mono</strong> : bool, optional</p>
+<blockquote>
+<div><p>If <tt class="xref py py-const xref docutils literal"><span class="pre">True</span></tt>, remove the monopole</p>
+</div></blockquote>
+<p><strong>gal_cut</strong> : float, scalar, optional</p>
+<blockquote>
+<div><p>Symmetric galactic cut for the dipole/monopole fit.
+Removes points in latitude range [-gal_cut, +gal_cut]</p>
+</div></blockquote>
+<p><strong>format</strong> : str, optional</p>
+<blockquote>
+<div><p>The format of the scale label. Default: &#8216;%g&#8217;</p>
+</div></blockquote>
+<p><strong>cbar</strong> : bool, optional</p>
+<blockquote>
+<div><p>Display the colorbar. Default: True</p>
+</div></blockquote>
+<p><strong>notext</strong> : bool, optional</p>
+<blockquote>
+<div><p>If True, no text is printed around the map</p>
+</div></blockquote>
+<p><strong>norm</strong> : {&#8216;hist&#8217;, &#8216;log&#8217;, None}, optional</p>
+<blockquote>
+<div><p>Color normalization, hist= histogram equalized color mapping,
+log= logarithmic color mapping, default: None (linear color mapping)</p>
+</div></blockquote>
+<p><strong>hold</strong> : bool, optional</p>
+<blockquote>
+<div><p>If True, replace the current Axes by a CartesianAxes.
+use this if you want to have multiple maps on the same
+figure. Default: False</p>
+</div></blockquote>
+<p><strong>sub</strong> : int, scalar or sequence, optional</p>
+<blockquote>
+<div><p>Use only a zone of the current figure (same syntax as subplot).
+Default: None</p>
+</div></blockquote>
+<p><strong>margins</strong> : None or sequence, optional</p>
+<blockquote class="last">
+<div><p>Either None, or a sequence (left,bottom,right,top)
+giving the margins on left,bottom,right and top
+of the axes. Values are relative to figure (0-1).
+Default: None</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-see-also admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="healpy.visufunc.mollview.html#healpy.visufunc.mollview" title="healpy.visufunc.mollview"><tt class="xref py py-obj docutils literal"><span class="pre">mollview</span></tt></a>, <a class="reference internal" href="healpy.visufunc.gnomview.html#healpy.visufunc.gnomview" title="healpy.visufunc.gnomview"><tt class="xref py py-obj docutils literal"><span class="pre">gnomview</span></tt></a></p>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="healpy.visufunc.gnomview.html"
+                        title="previous chapter">healpy.visufunc.gnomview</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="healpy.visufunc.graticule.html"
+                        title="next chapter">healpy.visufunc.graticule</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../sources/generated/healpy.visufunc.cartview.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="healpy.visufunc.graticule.html" title="healpy.visufunc.graticule"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="healpy.visufunc.gnomview.html" title="healpy.visufunc.gnomview"
+             >previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_visu.html" ><tt class="docutils literal docutils literal"><span class="pre">visufunc</span></tt> &#8211; Visualisation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

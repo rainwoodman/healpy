@@ -1,0 +1,6 @@
+healpy.pixelfunc.pix2ang
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.pix2ang

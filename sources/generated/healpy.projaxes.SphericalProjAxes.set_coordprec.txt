@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.set_coordprec
+===============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.set_coordprec

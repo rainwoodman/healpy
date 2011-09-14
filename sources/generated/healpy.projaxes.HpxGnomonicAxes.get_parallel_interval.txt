@@ -1,0 +1,6 @@
+healpy.projaxes.HpxGnomonicAxes.get_parallel_interval
+=====================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxGnomonicAxes.get_parallel_interval

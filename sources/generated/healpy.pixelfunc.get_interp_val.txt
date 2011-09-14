@@ -1,0 +1,6 @@
+healpy.pixelfunc.get_interp_val
+===============================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.get_interp_val

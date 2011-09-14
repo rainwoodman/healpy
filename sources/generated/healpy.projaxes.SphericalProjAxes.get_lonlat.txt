@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.get_lonlat
+============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.get_lonlat

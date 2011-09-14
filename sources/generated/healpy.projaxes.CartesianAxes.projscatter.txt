@@ -1,0 +1,6 @@
+healpy.projaxes.CartesianAxes.projscatter
+=========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: CartesianAxes.projscatter

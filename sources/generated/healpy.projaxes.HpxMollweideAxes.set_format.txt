@@ -1,0 +1,6 @@
+healpy.projaxes.HpxMollweideAxes.set_format
+===========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxMollweideAxes.set_format

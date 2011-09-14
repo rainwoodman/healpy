@@ -1,0 +1,6 @@
+healpy.projector.CartesianProj.get_extent
+=========================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: CartesianProj.get_extent

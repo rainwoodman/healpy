@@ -1,0 +1,6 @@
+healpy.rotator.rotateDirection
+==============================
+
+.. currentmodule:: healpy
+
+.. automethod:: rotator.rotateDirection

@@ -1,0 +1,6 @@
+healpy.pixelfunc.nside2resol
+============================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.nside2resol

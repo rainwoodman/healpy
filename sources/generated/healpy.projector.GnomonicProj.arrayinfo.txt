@@ -1,0 +1,6 @@
+healpy.projector.GnomonicProj.arrayinfo
+=======================================
+
+.. currentmodule:: healpy.projector
+
+.. autoattribute:: GnomonicProj.arrayinfo

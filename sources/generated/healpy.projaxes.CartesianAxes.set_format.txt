@@ -1,0 +1,6 @@
+healpy.projaxes.CartesianAxes.set_format
+========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: CartesianAxes.set_format

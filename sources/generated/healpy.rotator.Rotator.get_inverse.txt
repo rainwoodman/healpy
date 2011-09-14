@@ -1,0 +1,6 @@
+healpy.rotator.Rotator.get_inverse
+==================================
+
+.. currentmodule:: healpy.rotator
+
+.. automethod:: Rotator.get_inverse

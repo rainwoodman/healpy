@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pixelfunc – Pixelisation related functions &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="index.html" />
+    <link rel="next" title="healpy.pixelfunc.pix2ang" href="generated/healpy.pixelfunc.pix2ang.html" />
+    <link rel="prev" title="Welcome to healpy’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="generated/healpy.pixelfunc.pix2ang.html" title="healpy.pixelfunc.pix2ang"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to healpy’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">healpy vgithub-devel documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pixelfunc-pixelisation-related-functions">
+<h1><tt class="xref py py-mod docutils literal"><span class="pre">pixelfunc</span></tt> &#8211; Pixelisation related functions<a class="headerlink" href="#pixelfunc-pixelisation-related-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="conversion-from-to-sky-coordinates">
+<h2>conversion from/to sky coordinates<a class="headerlink" href="#conversion-from-to-sky-coordinates" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.pix2ang.html#healpy.pixelfunc.pix2ang" title="healpy.pixelfunc.pix2ang"><tt class="xref py py-obj docutils literal"><span class="pre">pix2ang</span></tt></a>(nside,&nbsp;ipix[,&nbsp;nest])</td>
+<td>pix2ang : nside,ipix,nest=False -&gt; theta[rad],phi[rad] (default RING)</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.pix2vec.html#healpy.pixelfunc.pix2vec" title="healpy.pixelfunc.pix2vec"><tt class="xref py py-obj docutils literal"><span class="pre">pix2vec</span></tt></a>(nside,&nbsp;ipix[,&nbsp;nest])</td>
+<td>pix2vec : nside,ipix,nest=False -&gt; x,y,z (default RING)</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.ang2pix.html#healpy.pixelfunc.ang2pix" title="healpy.pixelfunc.ang2pix"><tt class="xref py py-obj docutils literal"><span class="pre">ang2pix</span></tt></a>(nside,&nbsp;theta,&nbsp;phi[,&nbsp;nest])</td>
+<td>ang2pix : nside,theta[rad],phi[rad],nest=False -&gt; ipix (default:RING)</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.vec2pix.html#healpy.pixelfunc.vec2pix" title="healpy.pixelfunc.vec2pix"><tt class="xref py py-obj docutils literal"><span class="pre">vec2pix</span></tt></a>(nside,&nbsp;x,&nbsp;y,&nbsp;z[,&nbsp;nest])</td>
+<td>vec2pix : nside,x,y,z,nest=False -&gt; ipix (default:RING)</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.vec2ang.html#healpy.pixelfunc.vec2ang" title="healpy.pixelfunc.vec2ang"><tt class="xref py py-obj docutils literal"><span class="pre">vec2ang</span></tt></a>(vectors)</td>
+<td>vec2ang: vectors [x, y, z] -&gt; theta[rad], phi[rad]</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.ang2vec.html#healpy.pixelfunc.ang2vec" title="healpy.pixelfunc.ang2vec"><tt class="xref py py-obj docutils literal"><span class="pre">ang2vec</span></tt></a>(theta,&nbsp;phi)</td>
+<td>ang2vec : convert angles to 3D position vector</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.get_neighbours.html#healpy.pixelfunc.get_neighbours" title="healpy.pixelfunc.get_neighbours"><tt class="xref py py-obj docutils literal"><span class="pre">get_neighbours</span></tt></a>(nside,&nbsp;theta[,&nbsp;phi,&nbsp;nest])</td>
+<td>Return the 4 nearest pixels and corresponding weights.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.get_all_neighbours.html#healpy.pixelfunc.get_all_neighbours" title="healpy.pixelfunc.get_all_neighbours"><tt class="xref py py-obj docutils literal"><span class="pre">get_all_neighbours</span></tt></a>(nside,&nbsp;theta[,&nbsp;phi,&nbsp;nest])</td>
+<td>Return the 8 nearest pixels.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="conversion-between-nested-and-ring-schemes">
+<h2>conversion between NESTED and RING schemes<a class="headerlink" href="#conversion-between-nested-and-ring-schemes" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.nest2ring.html#healpy.pixelfunc.nest2ring" title="healpy.pixelfunc.nest2ring"><tt class="xref py py-obj docutils literal"><span class="pre">nest2ring</span></tt></a>(nside,&nbsp;ipix)</td>
+<td>Convert pixel number from NESTED ordering to RING ordering.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.ring2nest.html#healpy.pixelfunc.ring2nest" title="healpy.pixelfunc.ring2nest"><tt class="xref py py-obj docutils literal"><span class="pre">ring2nest</span></tt></a>(nside,&nbsp;ipix)</td>
+<td>Convert pixel number from RING ordering to NESTED ordering.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.reorder.html#healpy.pixelfunc.reorder" title="healpy.pixelfunc.reorder"><tt class="xref py py-obj docutils literal"><span class="pre">reorder</span></tt></a>(map_in[,&nbsp;inp,&nbsp;out,&nbsp;r2n,&nbsp;n2r])</td>
+<td>Reorder an healpix map from RING/NESTED ordering to NESTED/RING</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nside-npix-resolution">
+<h2>nside/npix/resolution<a class="headerlink" href="#nside-npix-resolution" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.nside2npix.html#healpy.pixelfunc.nside2npix" title="healpy.pixelfunc.nside2npix"><tt class="xref py py-obj docutils literal"><span class="pre">nside2npix</span></tt></a>(nside)</td>
+<td>Give the number of pixel for the given nside.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.npix2nside.html#healpy.pixelfunc.npix2nside" title="healpy.pixelfunc.npix2nside"><tt class="xref py py-obj docutils literal"><span class="pre">npix2nside</span></tt></a>(npix)</td>
+<td>Give the nside parameter for the given number of pixels.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.nside2resol.html#healpy.pixelfunc.nside2resol" title="healpy.pixelfunc.nside2resol"><tt class="xref py py-obj docutils literal"><span class="pre">nside2resol</span></tt></a>(nside[,&nbsp;arcmin])</td>
+<td>Give approximate resolution for nside.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.nside2pixarea.html#healpy.pixelfunc.nside2pixarea" title="healpy.pixelfunc.nside2pixarea"><tt class="xref py py-obj docutils literal"><span class="pre">nside2pixarea</span></tt></a>(nside[,&nbsp;degrees])</td>
+<td>Give pixel area given nside.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.isnsideok.html#healpy.pixelfunc.isnsideok" title="healpy.pixelfunc.isnsideok"><tt class="xref py py-obj docutils literal"><span class="pre">isnsideok</span></tt></a>(nside)</td>
+<td>Returns <tt class="xref py py-const xref docutils literal"><span class="pre">True</span></tt> if nside is a valid nside parameter, <tt class="xref py py-const xref docutils literal"><span class="pre">False</span></tt> otherwise.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.isnpixok.html#healpy.pixelfunc.isnpixok" title="healpy.pixelfunc.isnpixok"><tt class="xref py py-obj docutils literal"><span class="pre">isnpixok</span></tt></a>(npix)</td>
+<td>Return <tt class="xref py py-const xref docutils literal"><span class="pre">True</span></tt> if npix is a valid value for healpix map size, <tt class="xref py py-const xref docutils literal"><span class="pre">False</span></tt> otherwise.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.get_map_size.html#healpy.pixelfunc.get_map_size" title="healpy.pixelfunc.get_map_size"><tt class="xref py py-obj docutils literal"><span class="pre">get_map_size</span></tt></a>(m)</td>
+<td>Returns the npix of a given map (implicit or explicit pixelization).</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.get_min_valid_nside.html#healpy.pixelfunc.get_min_valid_nside" title="healpy.pixelfunc.get_min_valid_nside"><tt class="xref py py-obj docutils literal"><span class="pre">get_min_valid_nside</span></tt></a>(npix)</td>
+<td>Returns the minimum acceptable nside so that npix &lt;= nside2npix(nside).</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.get_nside.html#healpy.pixelfunc.get_nside" title="healpy.pixelfunc.get_nside"><tt class="xref py py-obj docutils literal"><span class="pre">get_nside</span></tt></a>(m)</td>
+<td>Return the nside of the given map.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.maptype.html#healpy.pixelfunc.maptype" title="healpy.pixelfunc.maptype"><tt class="xref py py-obj docutils literal"><span class="pre">maptype</span></tt></a>(m)</td>
+<td>Describe the type of the map (valid, single, sequence of maps).</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.ud_grade.html#healpy.pixelfunc.ud_grade" title="healpy.pixelfunc.ud_grade"><tt class="xref py py-obj docutils literal"><span class="pre">ud_grade</span></tt></a>(map_in,&nbsp;nside_out[,&nbsp;pess,&nbsp;...])</td>
+<td>Upgrade or degrade resolution of a map (or list of maps).</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="masking-pixels">
+<h2>Masking pixels<a class="headerlink" href="#masking-pixels" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.UNSEEN.html#healpy.pixelfunc.UNSEEN" title="healpy.pixelfunc.UNSEEN"><tt class="xref py py-obj docutils literal"><span class="pre">UNSEEN</span></tt></a></td>
+<td>float(x) -&gt; floating point number</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.mask_bad.html#healpy.pixelfunc.mask_bad" title="healpy.pixelfunc.mask_bad"><tt class="xref py py-obj docutils literal"><span class="pre">mask_bad</span></tt></a>(m[,&nbsp;badval,&nbsp;rtol,&nbsp;atol])</td>
+<td>Returns a bool array with <tt class="xref docutils literal"><span class="pre">True</span></tt> where m is close to badval.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.mask_good.html#healpy.pixelfunc.mask_good" title="healpy.pixelfunc.mask_good"><tt class="xref py py-obj docutils literal"><span class="pre">mask_good</span></tt></a>(m[,&nbsp;badval,&nbsp;rtol,&nbsp;atol])</td>
+<td>Returns a bool array with <tt class="xref docutils literal"><span class="pre">False</span></tt> where m is close to badval.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.ma.html#healpy.pixelfunc.ma" title="healpy.pixelfunc.ma"><tt class="xref py py-obj docutils literal"><span class="pre">ma</span></tt></a>(m[,&nbsp;badval,&nbsp;rtol,&nbsp;atol,&nbsp;copy])</td>
+<td>Return map as a masked array, with <tt class="docutils literal"><span class="pre">badval</span></tt> pixels masked.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="map-data-manipulation">
+<h2>Map data manipulation<a class="headerlink" href="#map-data-manipulation" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.fit_dipole.html#healpy.pixelfunc.fit_dipole" title="healpy.pixelfunc.fit_dipole"><tt class="xref py py-obj docutils literal"><span class="pre">fit_dipole</span></tt></a>(m[,&nbsp;nest,&nbsp;bad,&nbsp;gal_cut])</td>
+<td>Fit a dipole and a monopole to the map, excluding bad pixels.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.fit_monopole.html#healpy.pixelfunc.fit_monopole" title="healpy.pixelfunc.fit_monopole"><tt class="xref py py-obj docutils literal"><span class="pre">fit_monopole</span></tt></a>(m[,&nbsp;nest,&nbsp;bad,&nbsp;gal_cut])</td>
+<td>Fit a monopole to the map, excluding unseen pixels.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.remove_dipole.html#healpy.pixelfunc.remove_dipole" title="healpy.pixelfunc.remove_dipole"><tt class="xref py py-obj docutils literal"><span class="pre">remove_dipole</span></tt></a>(m[,&nbsp;nest,&nbsp;bad,&nbsp;gal_cut,&nbsp;...])</td>
+<td>Fit and subtract the dipole and the monopole from the given map m.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.remove_monopole.html#healpy.pixelfunc.remove_monopole" title="healpy.pixelfunc.remove_monopole"><tt class="xref py py-obj docutils literal"><span class="pre">remove_monopole</span></tt></a>(m[,&nbsp;nest,&nbsp;bad,&nbsp;gal_cut,&nbsp;...])</td>
+<td>Fit and subtract the monopole from the given map m.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.pixelfunc.get_interp_val.html#healpy.pixelfunc.get_interp_val" title="healpy.pixelfunc.get_interp_val"><tt class="xref py py-obj docutils literal"><span class="pre">get_interp_val</span></tt></a>(m,&nbsp;theta,&nbsp;phi[,&nbsp;nest])</td>
+<td>Return the bi-linear interpolation value of a map using 4 nearest neighbours.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">pixelfunc</span></tt> &#8211; Pixelisation related functions</a><ul>
+<li><a class="reference internal" href="#conversion-from-to-sky-coordinates">conversion from/to sky coordinates</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#conversion-between-nested-and-ring-schemes">conversion between NESTED and RING schemes</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#nside-npix-resolution">nside/npix/resolution</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#masking-pixels">Masking pixels</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#map-data-manipulation">Map data manipulation</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to healpy&#8217;s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="generated/healpy.pixelfunc.pix2ang.html"
+                        title="next chapter">healpy.pixelfunc.pix2ang</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="sources/healpy_pix.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="generated/healpy.pixelfunc.pix2ang.html" title="healpy.pixelfunc.pix2ang"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to healpy’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">healpy vgithub-devel documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

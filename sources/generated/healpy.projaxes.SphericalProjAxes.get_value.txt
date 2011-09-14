@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.get_value
+===========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.get_value

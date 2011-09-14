@@ -1,0 +1,6 @@
+healpy.projaxes.HpxGnomonicAxes.get_lonlat
+==========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxGnomonicAxes.get_lonlat

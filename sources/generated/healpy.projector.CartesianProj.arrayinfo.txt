@@ -1,0 +1,6 @@
+healpy.projector.CartesianProj.arrayinfo
+========================================
+
+.. currentmodule:: healpy.projector
+
+.. autoattribute:: CartesianProj.arrayinfo

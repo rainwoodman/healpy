@@ -1,0 +1,6 @@
+healpy.pixelfunc.ud_grade
+=========================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.ud_grade

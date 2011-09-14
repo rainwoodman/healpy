@@ -1,0 +1,6 @@
+healpy.projaxes.CartesianAxes.delgraticules
+===========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: CartesianAxes.delgraticules

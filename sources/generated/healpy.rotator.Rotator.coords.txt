@@ -1,0 +1,6 @@
+healpy.rotator.Rotator.coords
+=============================
+
+.. currentmodule:: healpy.rotator
+
+.. autoattribute:: Rotator.coords

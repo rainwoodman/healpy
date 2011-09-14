@@ -1,0 +1,6 @@
+healpy.projaxes.GnomonicAxes.delgraticules
+==========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: GnomonicAxes.delgraticules

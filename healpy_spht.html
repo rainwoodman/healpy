@@ -1,0 +1,195 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>sphtfunc – Spherical harmonic transforms &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="index.html" />
+    <link rel="next" title="healpy.sphtfunc.synfast" href="generated/healpy.sphtfunc.synfast.html" />
+    <link rel="prev" title="healpy.pixelfunc.get_interp_val" href="generated/healpy.pixelfunc.get_interp_val.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="generated/healpy.sphtfunc.synfast.html" title="healpy.sphtfunc.synfast"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="generated/healpy.pixelfunc.get_interp_val.html" title="healpy.pixelfunc.get_interp_val"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">healpy vgithub-devel documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sphtfunc-spherical-harmonic-transforms">
+<h1><tt class="xref py py-mod docutils literal"><span class="pre">sphtfunc</span></tt> &#8211; Spherical harmonic transforms<a class="headerlink" href="#sphtfunc-spherical-harmonic-transforms" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="from-map-to-spherical-harmonics">
+<h2>From map to spherical harmonics<a class="headerlink" href="#from-map-to-spherical-harmonics" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.synfast.html#healpy.sphtfunc.synfast" title="healpy.sphtfunc.synfast"><tt class="xref py py-obj docutils literal"><span class="pre">synfast</span></tt></a>(cls,&nbsp;nside[,&nbsp;lmax,&nbsp;mmax,&nbsp;alm,&nbsp;...])</td>
+<td>Create a map(s) from cl(s).</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.map2alm.html#healpy.sphtfunc.map2alm" title="healpy.sphtfunc.map2alm"><tt class="xref py py-obj docutils literal"><span class="pre">map2alm</span></tt></a>(m[,&nbsp;lmax,&nbsp;mmax,&nbsp;iter,&nbsp;use_weights,&nbsp;...])</td>
+<td>Computes the alm of an Healpix map.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="from-spherical-harmonics-to-map">
+<h2>From spherical harmonics to map<a class="headerlink" href="#from-spherical-harmonics-to-map" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.anafast.html#healpy.sphtfunc.anafast" title="healpy.sphtfunc.anafast"><tt class="xref py py-obj docutils literal"><span class="pre">anafast</span></tt></a>(m[,&nbsp;lmax,&nbsp;mmax,&nbsp;iter,&nbsp;alm,&nbsp;...])</td>
+<td>Computes the power spectrum of an Healpix map.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.alm2map.html#healpy.sphtfunc.alm2map" title="healpy.sphtfunc.alm2map"><tt class="xref py py-obj docutils literal"><span class="pre">alm2map</span></tt></a>(alm,&nbsp;nside[,&nbsp;lmax,&nbsp;mmax,&nbsp;pixwin,&nbsp;...])</td>
+<td>Computes an Healpix map given the alm.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.alm2map_der1.html#healpy.sphtfunc.alm2map_der1" title="healpy.sphtfunc.alm2map_der1"><tt class="xref py py-obj docutils literal"><span class="pre">alm2map_der1</span></tt></a>(alm,&nbsp;nside[,&nbsp;lmax,&nbsp;mmax])</td>
+<td>Computes an Healpix map and its first derivatives given the alm.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="spherical-harmonic-transform-tools">
+<h2>Spherical harmonic transform tools<a class="headerlink" href="#spherical-harmonic-transform-tools" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.smoothing.html#healpy.sphtfunc.smoothing" title="healpy.sphtfunc.smoothing"><tt class="xref py py-obj docutils literal"><span class="pre">smoothing</span></tt></a>(m[,&nbsp;fwhm,&nbsp;sigma,&nbsp;degree,&nbsp;arcmin])</td>
+<td>Smooth a map with a Gaussian symmetric beam.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.smoothalm.html#healpy.sphtfunc.smoothalm" title="healpy.sphtfunc.smoothalm"><tt class="xref py py-obj docutils literal"><span class="pre">smoothalm</span></tt></a>(alm[,&nbsp;fwhm,&nbsp;sigma,&nbsp;degree,&nbsp;...])</td>
+<td>Smooth alm with a Gaussian symmetric beam function in place.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.alm2cl.html#healpy.sphtfunc.alm2cl" title="healpy.sphtfunc.alm2cl"><tt class="xref py py-obj docutils literal"><span class="pre">alm2cl</span></tt></a>(alm[,&nbsp;mmax,&nbsp;nspec])</td>
+<td>Compute the auto- and cross- spectra of the given alm&#8217;s (either 1 alm or 3 alm).</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.synalm.html#healpy.sphtfunc.synalm" title="healpy.sphtfunc.synalm"><tt class="xref py py-obj docutils literal"><span class="pre">synalm</span></tt></a>(cls[,&nbsp;lmax,&nbsp;mmax])</td>
+<td>Generate a set of alm given cl.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.almxfl.html#healpy.sphtfunc.almxfl" title="healpy.sphtfunc.almxfl"><tt class="xref py py-obj docutils literal"><span class="pre">almxfl</span></tt></a>(alm,&nbsp;fl[,&nbsp;mmax,&nbsp;inplace])</td>
+<td>Multiply alm by a function of l.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.pixwin.html#healpy.sphtfunc.pixwin" title="healpy.sphtfunc.pixwin"><tt class="xref py py-obj docutils literal"><span class="pre">pixwin</span></tt></a>(nside[,&nbsp;pol])</td>
+<td>Return the pixel window function for the given nside.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.sphtfunc.Alm.html#healpy.sphtfunc.Alm" title="healpy.sphtfunc.Alm"><tt class="xref py py-obj docutils literal"><span class="pre">Alm</span></tt></a>()</td>
+<td>This class provides some static methods for alm index computation.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sphtfunc</span></tt> &#8211; Spherical harmonic transforms</a><ul>
+<li><a class="reference internal" href="#from-map-to-spherical-harmonics">From map to spherical harmonics</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#from-spherical-harmonics-to-map">From spherical harmonics to map</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#spherical-harmonic-transform-tools">Spherical harmonic transform tools</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="generated/healpy.pixelfunc.get_interp_val.html"
+                        title="previous chapter">healpy.pixelfunc.get_interp_val</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="generated/healpy.sphtfunc.synfast.html"
+                        title="next chapter">healpy.sphtfunc.synfast</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="sources/healpy_spht.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="generated/healpy.sphtfunc.synfast.html" title="healpy.sphtfunc.synfast"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="generated/healpy.pixelfunc.get_interp_val.html" title="healpy.pixelfunc.get_interp_val"
+             >previous</a> |</li>
+        <li><a href="index.html">healpy vgithub-devel documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

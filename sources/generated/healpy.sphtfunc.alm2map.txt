@@ -1,0 +1,6 @@
+healpy.sphtfunc.alm2map
+=======================
+
+.. currentmodule:: healpy
+
+.. automethod:: sphtfunc.alm2map

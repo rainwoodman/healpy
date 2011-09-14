@@ -1,0 +1,36 @@
+healpy.rotator.Rotator
+======================
+
+.. currentmodule:: healpy.rotator
+
+.. autoclass:: Rotator
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Rotator.I
+         Rotator.angle_ref
+         Rotator.do_rot
+         Rotator.__call__
+         Rotator.get_inverse
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         Rotator.coordout
+         Rotator.mat
+         Rotator.rots
+         Rotator.coordinstr
+         Rotator.coordoutstr
+         Rotator.coordin
+         Rotator.coords
+         Rotator.consistent
+

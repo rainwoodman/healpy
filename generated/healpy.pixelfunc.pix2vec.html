@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>healpy.pixelfunc.pix2vec &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="../static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="../index.html" />
+    <link rel="up" title="pixelfunc – Pixelisation related functions" href="../healpy_pix.html" />
+    <link rel="next" title="healpy.pixelfunc.ang2pix" href="healpy.pixelfunc.ang2pix.html" />
+    <link rel="prev" title="healpy.pixelfunc.pix2ang" href="healpy.pixelfunc.pix2ang.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.ang2pix.html" title="healpy.pixelfunc.ang2pix"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.pix2ang.html" title="healpy.pixelfunc.pix2ang"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_pix.html" accesskey="U"><tt class="docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal"><span class="pre">pixelfunc</span></tt> &#8211; Pixelisation related functions</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="healpy-pixelfunc-pix2vec">
+<h1>healpy.pixelfunc.pix2vec<a class="headerlink" href="#healpy-pixelfunc-pix2vec" title="Permalink to this headline">¶</a></h1>
+<dl class="staticmethod">
+<dt id="healpy.pixelfunc.pix2vec">
+<em class="property">static </em><tt class="descclassname">pixelfunc.</tt><tt class="descname">pix2vec</tt><big>(</big><em>nside</em>, <em>ipix</em>, <em>nest=False</em><big>)</big><a class="headerlink" href="#healpy.pixelfunc.pix2vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>pix2vec : nside,ipix,nest=False -&gt; x,y,z (default RING)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters :</th><td class="field-body"><p class="first"><strong>nside</strong> : int, scalar or array-like</p>
+<blockquote>
+<div><p>The healpix nside parameter, must be a power of 2</p>
+</div></blockquote>
+<p><strong>ipix</strong> : int, scalar or array-like</p>
+<blockquote>
+<div><p>Healpix pixel number</p>
+</div></blockquote>
+<p><strong>nest</strong> : bool, optional</p>
+<blockquote>
+<div><p>if True, assume NESTED pixel ordering, otherwise, RING pixel ordering</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns :</th><td class="field-body"><p class="first"><strong>x, y, z</strong> : floats, scalar or array-like</p>
+<blockquote class="last">
+<div><p>The coordinates of vector corresponding to input pixels. Scalar if all input
+are scalar, array otherwise. Usual numpy broadcasting rules apply.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-see-also admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="healpy.pixelfunc.ang2pix.html#healpy.pixelfunc.ang2pix" title="healpy.pixelfunc.ang2pix"><tt class="xref py py-obj docutils literal"><span class="pre">ang2pix</span></tt></a>, <a class="reference internal" href="healpy.pixelfunc.pix2ang.html#healpy.pixelfunc.pix2ang" title="healpy.pixelfunc.pix2ang"><tt class="xref py py-obj docutils literal"><span class="pre">pix2ang</span></tt></a>, <a class="reference internal" href="healpy.pixelfunc.vec2pix.html#healpy.pixelfunc.vec2pix" title="healpy.pixelfunc.vec2pix"><tt class="xref py py-obj docutils literal"><span class="pre">vec2pix</span></tt></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">hpy</span><span class="o">.</span><span class="n">pix2vec</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1504</span><span class="p">)</span>
+<span class="go">(0.99879545620517241, 0.049067674327418015, 0.0)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">hpy</span><span class="o">.</span><span class="n">pix2vec</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="p">[</span><span class="mi">1440</span><span class="p">,</span>  <span class="mi">427</span><span class="p">])</span>
+<span class="go">(array([ 0.99913157,  0.5000534 ]),</span>
+<span class="go"> array([ 0.       ,  0.5000534]),</span>
+<span class="go"> array([ 0.04166667,  0.70703125]))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">hpy</span><span class="o">.</span><span class="n">pix2vec</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">11</span><span class="p">)</span>
+<span class="go">(array([ 0.52704628,  0.68861915]),</span>
+<span class="go"> array([-0.52704628, -0.28523539]),</span>
+<span class="go"> array([-0.66666667,  0.66666667]))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="healpy.pixelfunc.pix2ang.html"
+                        title="previous chapter">healpy.pixelfunc.pix2ang</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="healpy.pixelfunc.ang2pix.html"
+                        title="next chapter">healpy.pixelfunc.ang2pix</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../sources/generated/healpy.pixelfunc.pix2vec.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.ang2pix.html" title="healpy.pixelfunc.ang2pix"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.pix2ang.html" title="healpy.pixelfunc.pix2ang"
+             >previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_pix.html" ><tt class="docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal"><span class="pre">pixelfunc</span></tt> &#8211; Pixelisation related functions</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

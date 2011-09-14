@@ -1,0 +1,6 @@
+healpy.pixelfunc.fit_monopole
+=============================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.fit_monopole

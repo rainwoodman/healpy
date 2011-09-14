@@ -1,0 +1,6 @@
+healpy.fitsfunc.read_map
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: fitsfunc.read_map

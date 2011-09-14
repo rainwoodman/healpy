@@ -1,0 +1,6 @@
+healpy.projaxes.HpxGnomonicAxes.set_coordprec
+=============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxGnomonicAxes.set_coordprec

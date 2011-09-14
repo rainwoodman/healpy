@@ -1,0 +1,6 @@
+healpy.projaxes.MollweideAxes.projplot
+======================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: MollweideAxes.projplot

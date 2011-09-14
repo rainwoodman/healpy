@@ -1,0 +1,6 @@
+healpy.projector.CartesianProj.get_proj_plane_info
+==================================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: CartesianProj.get_proj_plane_info

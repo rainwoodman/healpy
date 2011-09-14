@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>rotator – Rotation and geometry functions &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="index.html" />
+    <link rel="next" title="healpy.rotator.Rotator" href="generated/healpy.rotator.Rotator.html" />
+    <link rel="prev" title="healpy.fitsfunc.getformat" href="generated/healpy.fitsfunc.getformat.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="generated/healpy.rotator.Rotator.html" title="healpy.rotator.Rotator"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="generated/healpy.fitsfunc.getformat.html" title="healpy.fitsfunc.getformat"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">healpy vgithub-devel documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="rotator-rotation-and-geometry-functions">
+<h1><tt class="xref py py-mod docutils literal"><span class="pre">rotator</span></tt> &#8211; Rotation and geometry functions<a class="headerlink" href="#rotator-rotation-and-geometry-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rotation">
+<h2>Rotation<a class="headerlink" href="#rotation" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.rotator.Rotator.html#healpy.rotator.Rotator" title="healpy.rotator.Rotator"><tt class="xref py py-obj docutils literal"><span class="pre">Rotator</span></tt></a>([rot,&nbsp;coord,&nbsp;inv,&nbsp;deg,&nbsp;eulertype])</td>
+<td>Rotation operator, including astronomical coordinate systems.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.rotator.rotateVector.html#healpy.rotator.rotateVector" title="healpy.rotator.rotateVector"><tt class="xref py py-obj docutils literal"><span class="pre">rotateVector</span></tt></a>(rotmat,&nbsp;vec[,&nbsp;vy,&nbsp;vz,&nbsp;do_rot])</td>
+<td>Rotate a vector (or a list of vectors) using the rotation matrix given as first argument.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.rotator.rotateDirection.html#healpy.rotator.rotateDirection" title="healpy.rotator.rotateDirection"><tt class="xref py py-obj docutils literal"><span class="pre">rotateDirection</span></tt></a>(rotmat,&nbsp;theta[,&nbsp;phi,&nbsp;...])</td>
+<td>Rotate the vector described by angles theta,phi using the rotation matrix given as first argument.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="geometrical-helpers">
+<h2>Geometrical helpers<a class="headerlink" href="#geometrical-helpers" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="generated/healpy.rotator.vec2dir.html#healpy.rotator.vec2dir" title="healpy.rotator.vec2dir"><tt class="xref py py-obj docutils literal"><span class="pre">vec2dir</span></tt></a>(vec[,&nbsp;vy,&nbsp;vz,&nbsp;lonlat])</td>
+<td>Transform a vector to angle given by theta,phi.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.rotator.dir2vec.html#healpy.rotator.dir2vec" title="healpy.rotator.dir2vec"><tt class="xref py py-obj docutils literal"><span class="pre">dir2vec</span></tt></a>(theta[,&nbsp;phi,&nbsp;lonlat])</td>
+<td>Transform a direction theta,phi to a unit vector.</td>
+</tr>
+<tr><td><a class="reference internal" href="generated/healpy.rotator.angdist.html#healpy.rotator.angdist" title="healpy.rotator.angdist"><tt class="xref py py-obj docutils literal"><span class="pre">angdist</span></tt></a>(dir1,&nbsp;dir2[,&nbsp;lonlat])</td>
+<td>Returns the angular distance between dir1 and dir2.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">rotator</span></tt> &#8211; Rotation and geometry functions</a><ul>
+<li><a class="reference internal" href="#rotation">Rotation</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#geometrical-helpers">Geometrical helpers</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="generated/healpy.fitsfunc.getformat.html"
+                        title="previous chapter">healpy.fitsfunc.getformat</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="generated/healpy.rotator.Rotator.html"
+                        title="next chapter">healpy.rotator.Rotator</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="sources/healpy_rotator.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="generated/healpy.rotator.Rotator.html" title="healpy.rotator.Rotator"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="generated/healpy.fitsfunc.getformat.html" title="healpy.fitsfunc.getformat"
+             >previous</a> |</li>
+        <li><a href="index.html">healpy vgithub-devel documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

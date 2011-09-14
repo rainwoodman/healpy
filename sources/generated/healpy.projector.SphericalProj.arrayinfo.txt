@@ -1,0 +1,6 @@
+healpy.projector.SphericalProj.arrayinfo
+========================================
+
+.. currentmodule:: healpy.projector
+
+.. autoattribute:: SphericalProj.arrayinfo

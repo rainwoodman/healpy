@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.set_format
+============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.set_format

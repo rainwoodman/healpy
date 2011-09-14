@@ -1,0 +1,38 @@
+healpy.projector.GnomonicProj
+=============================
+
+.. currentmodule:: healpy.projector
+
+.. autoclass:: GnomonicProj
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         GnomonicProj.set_flip
+         GnomonicProj.projmap
+         GnomonicProj.vec2xy
+         GnomonicProj.xy2vec
+         GnomonicProj.get_extent
+         GnomonicProj.ij2xy
+         GnomonicProj.mkcoord
+         GnomonicProj.xy2ij
+         GnomonicProj.get_center
+         GnomonicProj.set_proj_plane_info
+         GnomonicProj.ang2xy
+         GnomonicProj.get_proj_plane_info
+         GnomonicProj.xy2ang
+         GnomonicProj.get_fov
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         GnomonicProj.arrayinfo
+

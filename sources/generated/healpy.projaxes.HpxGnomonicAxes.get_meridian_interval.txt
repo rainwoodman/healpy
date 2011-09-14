@@ -1,0 +1,6 @@
+healpy.projaxes.HpxGnomonicAxes.get_meridian_interval
+=====================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxGnomonicAxes.get_meridian_interval

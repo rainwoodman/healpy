@@ -1,0 +1,6 @@
+healpy.fitsfunc.write_cl
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: fitsfunc.write_cl

@@ -1,0 +1,6 @@
+healpy.fitsfunc.write_map
+=========================
+
+.. currentmodule:: healpy
+
+.. automethod:: fitsfunc.write_map

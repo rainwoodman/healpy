@@ -1,0 +1,6 @@
+healpy.pixelfunc.isnsideok
+==========================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.isnsideok

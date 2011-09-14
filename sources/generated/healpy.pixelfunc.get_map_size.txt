@@ -1,0 +1,6 @@
+healpy.pixelfunc.get_map_size
+=============================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.get_map_size

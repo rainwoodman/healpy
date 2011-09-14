@@ -1,0 +1,6 @@
+healpy.projaxes.HpxGnomonicAxes.set_format
+==========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxGnomonicAxes.set_format

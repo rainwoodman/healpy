@@ -1,0 +1,38 @@
+healpy.projector.MollweideProj
+==============================
+
+.. currentmodule:: healpy.projector
+
+.. autoclass:: MollweideProj
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         MollweideProj.set_flip
+         MollweideProj.projmap
+         MollweideProj.get_fov
+         MollweideProj.xy2vec
+         MollweideProj.get_extent
+         MollweideProj.ij2xy
+         MollweideProj.mkcoord
+         MollweideProj.xy2ij
+         MollweideProj.get_center
+         MollweideProj.set_proj_plane_info
+         MollweideProj.ang2xy
+         MollweideProj.get_proj_plane_info
+         MollweideProj.xy2ang
+         MollweideProj.vec2xy
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         MollweideProj.arrayinfo
+

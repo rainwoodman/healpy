@@ -1,0 +1,6 @@
+healpy.projector.MollweideProj.get_proj_plane_info
+==================================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: MollweideProj.get_proj_plane_info

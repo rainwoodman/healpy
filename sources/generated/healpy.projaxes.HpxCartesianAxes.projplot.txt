@@ -1,0 +1,6 @@
+healpy.projaxes.HpxCartesianAxes.projplot
+=========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxCartesianAxes.projplot

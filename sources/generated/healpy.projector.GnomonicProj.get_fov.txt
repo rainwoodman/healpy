@@ -1,0 +1,6 @@
+healpy.projector.GnomonicProj.get_fov
+=====================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: GnomonicProj.get_fov

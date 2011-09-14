@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.delgraticules
+===============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.delgraticules

@@ -1,0 +1,6 @@
+healpy.rotator.Rotator.angle_ref
+================================
+
+.. currentmodule:: healpy.rotator
+
+.. automethod:: Rotator.angle_ref

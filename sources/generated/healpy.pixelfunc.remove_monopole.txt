@@ -1,0 +1,6 @@
+healpy.pixelfunc.remove_monopole
+================================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.remove_monopole

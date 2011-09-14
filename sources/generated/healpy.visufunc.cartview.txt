@@ -1,0 +1,6 @@
+healpy.visufunc.cartview
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: visufunc.cartview

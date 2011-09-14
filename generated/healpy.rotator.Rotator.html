@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>healpy.rotator.Rotator &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="../static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="../index.html" />
+    <link rel="up" title="rotator – Rotation and geometry functions" href="../healpy_rotator.html" />
+    <link rel="next" title="healpy.rotator.Rotator.mat" href="healpy.rotator.Rotator.mat.html" />
+    <link rel="prev" title="healpy.rotator.angdist" href="healpy.rotator.angdist.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="healpy.rotator.Rotator.mat.html" title="healpy.rotator.Rotator.mat"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="healpy.rotator.angdist.html" title="healpy.rotator.angdist"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_rotator.html" accesskey="U"><tt class="docutils literal docutils literal"><span class="pre">rotator</span></tt> &#8211; Rotation and geometry functions</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="healpy-rotator-rotator">
+<h1>healpy.rotator.Rotator<a class="headerlink" href="#healpy-rotator-rotator" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="healpy.rotator.Rotator">
+<em class="property">class </em><tt class="descclassname">healpy.rotator.</tt><tt class="descname">Rotator</tt><big>(</big><em>rot=None</em>, <em>coord=None</em>, <em>inv=None</em>, <em>deg=True</em>, <em>eulertype='ZYX'</em><big>)</big><a class="headerlink" href="#healpy.rotator.Rotator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotation operator, including astronomical coordinate systems.</p>
+<p>This class provides tools for spherical rotations. It is meant to be used 
+in the healpy library for plotting, and for this reason reflects the
+convention used in the Healpix IDL library.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters :</th><td class="field-body"><p class="first"><strong>rot</strong> : None or sequence</p>
+<blockquote>
+<div><p>Describe the rotation by its euler angle. See <tt class="xref py py-func docutils literal"><span class="pre">euler_matrix_new()</span></tt>.</p>
+</div></blockquote>
+<p><strong>coord</strong> : None or sequence of str</p>
+<blockquote>
+<div><p>Describe the coordinate system transform. If <em>rot</em> is also given, the
+coordinate transform is applied first, and then the rotation.</p>
+</div></blockquote>
+<p><strong>inv</strong> : bool</p>
+<blockquote>
+<div><p>If True, the inverse rotation is defined. (Default: False)</p>
+</div></blockquote>
+<p><strong>deg</strong> : bool</p>
+<blockquote>
+<div><p>If True, angles are assumed to be in degree. (Default: True)</p>
+</div></blockquote>
+<p><strong>eulertype</strong> : str</p>
+<blockquote class="last">
+<div><p>The Euler angle convention used. See <tt class="xref py py-func docutils literal"><span class="pre">euler_matrix_new()</span></tt>.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">r</span> <span class="o">=</span> <span class="n">Rotator</span><span class="p">(</span><span class="n">coord</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;G&#39;</span><span class="p">,</span><span class="s">&#39;E&#39;</span><span class="p">])</span>  <span class="c"># Transforms galactic to ecliptic coordinates</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">theta_gal</span><span class="p">,</span> <span class="n">phi_gal</span> <span class="o">=</span> <span class="n">npy</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">0.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">theta_ecl</span><span class="p">,</span> <span class="n">phi_ecl</span> <span class="o">=</span> <span class="n">r</span><span class="p">(</span><span class="n">theta_gal</span><span class="p">,</span> <span class="n">phi_gal</span><span class="p">)</span>  <span class="c"># Apply the conversion</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">theta_ecl</span><span class="p">,</span> <span class="n">phi_ecl</span>
+<span class="go">1.66742286715 -1.62596400306</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">theta_ecl</span><span class="p">,</span> <span class="n">phi_ecl</span> <span class="o">=</span> <span class="n">Rotator</span><span class="p">(</span><span class="n">coord</span><span class="o">=</span><span class="s">&#39;ge&#39;</span><span class="p">)(</span><span class="n">theta_gal</span><span class="p">,</span> <span class="n">phi_gal</span><span class="p">)</span> <span class="c"># In one line</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">theta_ecl</span><span class="p">,</span> <span class="n">phi_ecl</span>
+<span class="go">1.66742286715 -1.62596400306</span>
+</pre></div>
+</div>
+<p class="rubric">Attributes</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.mat.html#healpy.rotator.Rotator.mat" title="healpy.rotator.Rotator.mat"><tt class="xref py py-obj docutils literal"><span class="pre">mat</span></tt></a></td>
+<td>The matrix representing the rotation.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.coordin.html#healpy.rotator.Rotator.coordin" title="healpy.rotator.Rotator.coordin"><tt class="xref py py-obj docutils literal"><span class="pre">coordin</span></tt></a></td>
+<td>The input coordinate system.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.coordout.html#healpy.rotator.Rotator.coordout" title="healpy.rotator.Rotator.coordout"><tt class="xref py py-obj docutils literal"><span class="pre">coordout</span></tt></a></td>
+<td>The output coordinate system.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.coordinstr.html#healpy.rotator.Rotator.coordinstr" title="healpy.rotator.Rotator.coordinstr"><tt class="xref py py-obj docutils literal"><span class="pre">coordinstr</span></tt></a></td>
+<td>The input coordinate system in str.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.coordoutstr.html#healpy.rotator.Rotator.coordoutstr" title="healpy.rotator.Rotator.coordoutstr"><tt class="xref py py-obj docutils literal"><span class="pre">coordoutstr</span></tt></a></td>
+<td>The output coordinate system in str.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.rots.html#healpy.rotator.Rotator.rots" title="healpy.rotator.Rotator.rots"><tt class="xref py py-obj docutils literal"><span class="pre">rots</span></tt></a></td>
+<td>The sequence of rots defining the rotation.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.coords.html#healpy.rotator.Rotator.coords" title="healpy.rotator.Rotator.coords"><tt class="xref py py-obj docutils literal"><span class="pre">coords</span></tt></a></td>
+<td>The sequence of coords defining the rotation.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.I.html#healpy.rotator.Rotator.I" title="healpy.rotator.Rotator.I"><tt class="xref py py-obj docutils literal"><span class="pre">I</span></tt></a>(*args,&nbsp;**kwds)</td>
+<td>Rotate the given vector or direction using the inverse matrix.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.__call__.html#healpy.rotator.Rotator.__call__" title="healpy.rotator.Rotator.__call__"><tt class="xref py py-obj docutils literal"><span class="pre">__call__</span></tt></a>(*args,&nbsp;**kwds)</td>
+<td>Use the rotator to rotate either spherical coordinates (theta, phi) or a vector (x,y,z).</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.angle_ref.html#healpy.rotator.Rotator.angle_ref" title="healpy.rotator.Rotator.angle_ref"><tt class="xref py py-obj docutils literal"><span class="pre">angle_ref</span></tt></a>(*args,&nbsp;**kwds)</td>
+<td>Compute the angle between transverse reference direction of initial and final frames</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.do_rot.html#healpy.rotator.Rotator.do_rot" title="healpy.rotator.Rotator.do_rot"><tt class="xref py py-obj docutils literal"><span class="pre">do_rot</span></tt></a>(i)</td>
+<td>Returns True if rotation is not (close to) identity.</td>
+</tr>
+<tr><td><a class="reference internal" href="healpy.rotator.Rotator.get_inverse.html#healpy.rotator.Rotator.get_inverse" title="healpy.rotator.Rotator.get_inverse"><tt class="xref py py-obj docutils literal"><span class="pre">get_inverse</span></tt></a>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="healpy.rotator.angdist.html"
+                        title="previous chapter">healpy.rotator.angdist</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="healpy.rotator.Rotator.mat.html"
+                        title="next chapter">healpy.rotator.Rotator.mat</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../sources/generated/healpy.rotator.Rotator.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="healpy.rotator.Rotator.mat.html" title="healpy.rotator.Rotator.mat"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="healpy.rotator.angdist.html" title="healpy.rotator.angdist"
+             >previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_rotator.html" ><tt class="docutils literal docutils literal"><span class="pre">rotator</span></tt> &#8211; Rotation and geometry functions</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

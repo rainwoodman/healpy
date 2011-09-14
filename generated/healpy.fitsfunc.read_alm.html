@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>healpy.fitsfunc.read_alm &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="../static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="../index.html" />
+    <link rel="up" title="fitsfunc – Pixelisation related functions" href="../healpy_fits.html" />
+    <link rel="next" title="healpy.fitsfunc.write_alm" href="healpy.fitsfunc.write_alm.html" />
+    <link rel="prev" title="healpy.fitsfunc.write_map" href="healpy.fitsfunc.write_map.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="healpy.fitsfunc.write_alm.html" title="healpy.fitsfunc.write_alm"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="healpy.fitsfunc.write_map.html" title="healpy.fitsfunc.write_map"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_fits.html" accesskey="U"><tt class="docutils literal docutils literal docutils literal docutils literal"><span class="pre">fitsfunc</span></tt> &#8211; Pixelisation related functions</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="healpy-fitsfunc-read-alm">
+<h1>healpy.fitsfunc.read_alm<a class="headerlink" href="#healpy-fitsfunc-read-alm" title="Permalink to this headline">¶</a></h1>
+<dl class="staticmethod">
+<dt id="healpy.fitsfunc.read_alm">
+<em class="property">static </em><tt class="descclassname">fitsfunc.</tt><tt class="descname">read_alm</tt><big>(</big><em>filename</em>, <em>hdu=1</em>, <em>return_mmax=False</em><big>)</big><a class="headerlink" href="#healpy.fitsfunc.read_alm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read alm from a fits file. In the fits file, the alm are written
+with explicit index scheme, index = l**2+l+m+1, while healpix cxx
+uses index = m*(2*lmax+1-m)/2+l. The conversion is done in this 
+function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters :</th><td class="field-body"><p class="first"><strong>filename</strong> : str</p>
+<blockquote>
+<div><p>The name of the fits file to read</p>
+</div></blockquote>
+<p><strong>hdu</strong> : int, optional</p>
+<blockquote>
+<div><p>The header to read. Start at 0. Default: hdu=1</p>
+</div></blockquote>
+<p><strong>return_mmax</strong> : bool, optional</p>
+<blockquote>
+<div><p>If true, both the alms and mmax is returned in a tuple. Default: return_mmax=False</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns :</th><td class="field-body"><p class="first"><strong>alms[, mmax]</strong> : complex array or tuple of a complex array and an int</p>
+<blockquote class="last">
+<div><p>The alms read from the file and optionally mmax read from the file</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="healpy.fitsfunc.write_map.html"
+                        title="previous chapter">healpy.fitsfunc.write_map</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="healpy.fitsfunc.write_alm.html"
+                        title="next chapter">healpy.fitsfunc.write_alm</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../sources/generated/healpy.fitsfunc.read_alm.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="healpy.fitsfunc.write_alm.html" title="healpy.fitsfunc.write_alm"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="healpy.fitsfunc.write_map.html" title="healpy.fitsfunc.write_map"
+             >previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_fits.html" ><tt class="docutils literal docutils literal docutils literal docutils literal"><span class="pre">fitsfunc</span></tt> &#8211; Pixelisation related functions</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+healpy.pixelfunc.get_all_neighbours
+===================================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.get_all_neighbours

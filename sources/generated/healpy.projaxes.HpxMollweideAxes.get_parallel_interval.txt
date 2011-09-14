@@ -1,0 +1,6 @@
+healpy.projaxes.HpxMollweideAxes.get_parallel_interval
+======================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxMollweideAxes.get_parallel_interval

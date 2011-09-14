@@ -1,0 +1,6 @@
+healpy.sphtfunc.synalm
+======================
+
+.. currentmodule:: healpy
+
+.. automethod:: sphtfunc.synalm

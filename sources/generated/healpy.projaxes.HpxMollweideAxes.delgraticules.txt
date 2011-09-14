@@ -1,0 +1,6 @@
+healpy.projaxes.HpxMollweideAxes.delgraticules
+==============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxMollweideAxes.delgraticules

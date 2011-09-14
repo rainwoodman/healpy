@@ -1,0 +1,6 @@
+healpy.projaxes.HpxCartesianAxes.get_parallel_interval
+======================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxCartesianAxes.get_parallel_interval

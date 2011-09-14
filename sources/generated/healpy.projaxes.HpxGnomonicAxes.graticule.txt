@@ -1,0 +1,6 @@
+healpy.projaxes.HpxGnomonicAxes.graticule
+=========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxGnomonicAxes.graticule

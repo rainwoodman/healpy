@@ -1,0 +1,6 @@
+healpy.pixelfunc.mask_good
+==========================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.mask_good

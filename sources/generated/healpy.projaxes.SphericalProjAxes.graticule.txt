@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.graticule
+===========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.graticule

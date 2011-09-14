@@ -1,0 +1,6 @@
+healpy.pixelfunc.get_min_valid_nside
+====================================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.get_min_valid_nside

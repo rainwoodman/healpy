@@ -1,0 +1,38 @@
+healpy.projector.CartesianProj
+==============================
+
+.. currentmodule:: healpy.projector
+
+.. autoclass:: CartesianProj
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         CartesianProj.set_flip
+         CartesianProj.projmap
+         CartesianProj.vec2xy
+         CartesianProj.xy2vec
+         CartesianProj.get_extent
+         CartesianProj.ij2xy
+         CartesianProj.mkcoord
+         CartesianProj.xy2ij
+         CartesianProj.get_center
+         CartesianProj.set_proj_plane_info
+         CartesianProj.ang2xy
+         CartesianProj.get_proj_plane_info
+         CartesianProj.xy2ang
+         CartesianProj.get_fov
+
+
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         CartesianProj.arrayinfo
+

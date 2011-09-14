@@ -1,0 +1,6 @@
+healpy.pixelfunc.remove_dipole
+==============================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.remove_dipole

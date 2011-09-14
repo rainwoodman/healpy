@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.projplot
+==========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.projplot

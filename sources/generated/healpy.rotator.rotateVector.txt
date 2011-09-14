@@ -1,0 +1,6 @@
+healpy.rotator.rotateVector
+===========================
+
+.. currentmodule:: healpy
+
+.. automethod:: rotator.rotateVector

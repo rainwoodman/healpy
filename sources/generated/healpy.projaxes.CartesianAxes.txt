@@ -1,0 +1,30 @@
+healpy.projaxes.CartesianAxes
+=============================
+
+.. currentmodule:: healpy.projaxes
+
+.. autoclass:: CartesianAxes
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         CartesianAxes.delgraticules
+         CartesianAxes.get_value
+         CartesianAxes.graticule
+         CartesianAxes.projscatter
+         CartesianAxes.get_meridian_interval
+         CartesianAxes.projtext
+         CartesianAxes.projmap
+         CartesianAxes.set_coordprec
+         CartesianAxes.get_parallel_interval
+         CartesianAxes.get_lonlat
+         CartesianAxes.set_format
+         CartesianAxes.projplot
+
+
+
+   
+

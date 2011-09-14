@@ -1,0 +1,6 @@
+healpy.sphtfunc.smoothing
+=========================
+
+.. currentmodule:: healpy
+
+.. automethod:: sphtfunc.smoothing

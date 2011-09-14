@@ -1,0 +1,6 @@
+healpy.projaxes.HpxCartesianAxes.get_value
+==========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxCartesianAxes.get_value

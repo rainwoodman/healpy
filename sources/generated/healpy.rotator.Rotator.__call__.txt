@@ -1,0 +1,6 @@
+healpy.rotator.Rotator.__call__
+===============================
+
+.. currentmodule:: healpy.rotator
+
+.. automethod:: Rotator.__call__

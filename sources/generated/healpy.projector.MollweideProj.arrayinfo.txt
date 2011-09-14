@@ -1,0 +1,6 @@
+healpy.projector.MollweideProj.arrayinfo
+========================================
+
+.. currentmodule:: healpy.projector
+
+.. autoattribute:: MollweideProj.arrayinfo

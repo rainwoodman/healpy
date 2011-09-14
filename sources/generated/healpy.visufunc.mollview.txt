@@ -1,0 +1,6 @@
+healpy.visufunc.mollview
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: visufunc.mollview

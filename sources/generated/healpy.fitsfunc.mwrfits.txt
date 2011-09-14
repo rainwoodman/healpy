@@ -1,0 +1,6 @@
+healpy.fitsfunc.mwrfits
+=======================
+
+.. currentmodule:: healpy
+
+.. automethod:: fitsfunc.mwrfits

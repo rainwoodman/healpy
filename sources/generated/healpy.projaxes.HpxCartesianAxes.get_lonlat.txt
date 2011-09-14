@@ -1,0 +1,6 @@
+healpy.projaxes.HpxCartesianAxes.get_lonlat
+===========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxCartesianAxes.get_lonlat

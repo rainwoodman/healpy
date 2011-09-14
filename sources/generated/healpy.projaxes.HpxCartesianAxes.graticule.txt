@@ -1,0 +1,6 @@
+healpy.projaxes.HpxCartesianAxes.graticule
+==========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxCartesianAxes.graticule

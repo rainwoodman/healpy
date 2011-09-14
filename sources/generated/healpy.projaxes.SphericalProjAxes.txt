@@ -1,0 +1,30 @@
+healpy.projaxes.SphericalProjAxes
+=================================
+
+.. currentmodule:: healpy.projaxes
+
+.. autoclass:: SphericalProjAxes
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         SphericalProjAxes.delgraticules
+         SphericalProjAxes.get_value
+         SphericalProjAxes.graticule
+         SphericalProjAxes.projscatter
+         SphericalProjAxes.get_meridian_interval
+         SphericalProjAxes.projtext
+         SphericalProjAxes.projmap
+         SphericalProjAxes.set_coordprec
+         SphericalProjAxes.get_parallel_interval
+         SphericalProjAxes.get_lonlat
+         SphericalProjAxes.set_format
+         SphericalProjAxes.projplot
+
+
+
+   
+

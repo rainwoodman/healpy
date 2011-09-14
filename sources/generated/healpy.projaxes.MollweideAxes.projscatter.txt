@@ -1,0 +1,6 @@
+healpy.projaxes.MollweideAxes.projscatter
+=========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: MollweideAxes.projscatter

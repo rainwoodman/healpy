@@ -1,0 +1,6 @@
+healpy.projector.GnomonicProj.get_extent
+========================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: GnomonicProj.get_extent

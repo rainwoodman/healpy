@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.get_parallel_interval
+=======================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.get_parallel_interval

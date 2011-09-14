@@ -1,0 +1,6 @@
+healpy.projaxes.GnomonicAxes.get_value
+======================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: GnomonicAxes.get_value

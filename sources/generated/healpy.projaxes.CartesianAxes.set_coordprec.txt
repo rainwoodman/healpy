@@ -1,0 +1,6 @@
+healpy.projaxes.CartesianAxes.set_coordprec
+===========================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: CartesianAxes.set_coordprec

@@ -1,0 +1,6 @@
+healpy.projaxes.MollweideAxes.get_meridian_interval
+===================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: MollweideAxes.get_meridian_interval

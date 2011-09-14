@@ -1,0 +1,6 @@
+healpy.projaxes.SphericalProjAxes.get_meridian_interval
+=======================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: SphericalProjAxes.get_meridian_interval

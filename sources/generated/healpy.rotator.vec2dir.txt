@@ -1,0 +1,6 @@
+healpy.rotator.vec2dir
+======================
+
+.. currentmodule:: healpy
+
+.. automethod:: rotator.vec2dir

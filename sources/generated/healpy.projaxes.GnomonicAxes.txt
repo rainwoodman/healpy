@@ -1,0 +1,30 @@
+healpy.projaxes.GnomonicAxes
+============================
+
+.. currentmodule:: healpy.projaxes
+
+.. autoclass:: GnomonicAxes
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         GnomonicAxes.delgraticules
+         GnomonicAxes.get_value
+         GnomonicAxes.graticule
+         GnomonicAxes.projscatter
+         GnomonicAxes.get_meridian_interval
+         GnomonicAxes.projtext
+         GnomonicAxes.projmap
+         GnomonicAxes.set_coordprec
+         GnomonicAxes.get_parallel_interval
+         GnomonicAxes.get_lonlat
+         GnomonicAxes.set_format
+         GnomonicAxes.projplot
+
+
+
+   
+

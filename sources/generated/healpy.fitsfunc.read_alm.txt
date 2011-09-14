@@ -1,0 +1,6 @@
+healpy.fitsfunc.read_alm
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: fitsfunc.read_alm

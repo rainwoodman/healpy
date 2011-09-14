@@ -1,0 +1,6 @@
+healpy.projaxes.HpxCartesianAxes.get_meridian_interval
+======================================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxCartesianAxes.get_meridian_interval

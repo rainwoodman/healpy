@@ -1,0 +1,6 @@
+healpy.projector.CartesianProj.get_center
+=========================================
+
+.. currentmodule:: healpy.projector
+
+.. automethod:: CartesianProj.get_center

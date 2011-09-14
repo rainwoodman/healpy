@@ -1,0 +1,6 @@
+healpy.projaxes.HpxMollweideAxes.set_coordprec
+==============================================
+
+.. currentmodule:: healpy.projaxes
+
+.. automethod:: HpxMollweideAxes.set_coordprec

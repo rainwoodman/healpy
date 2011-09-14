@@ -1,0 +1,30 @@
+healpy.projaxes.HpxMollweideAxes
+================================
+
+.. currentmodule:: healpy.projaxes
+
+.. autoclass:: HpxMollweideAxes
+
+   
+
+   .. HACK -- the point here is that we don't want this to appear in the output, but the autosummary should still generate the pages.
+      .. autosummary::
+         :toctree:
+      
+         HpxMollweideAxes.delgraticules
+         HpxMollweideAxes.get_value
+         HpxMollweideAxes.graticule
+         HpxMollweideAxes.projscatter
+         HpxMollweideAxes.get_meridian_interval
+         HpxMollweideAxes.projtext
+         HpxMollweideAxes.projmap
+         HpxMollweideAxes.set_coordprec
+         HpxMollweideAxes.get_parallel_interval
+         HpxMollweideAxes.get_lonlat
+         HpxMollweideAxes.set_format
+         HpxMollweideAxes.projplot
+
+
+
+   
+

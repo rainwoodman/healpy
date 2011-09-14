@@ -1,0 +1,6 @@
+healpy.pixelfunc.nest2ring
+==========================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.nest2ring

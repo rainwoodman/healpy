@@ -1,0 +1,6 @@
+healpy.pixelfunc.pix2vec
+========================
+
+.. currentmodule:: healpy
+
+.. automethod:: pixelfunc.pix2vec

@@ -1,0 +1,158 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>healpy.pixelfunc.ring2nest &mdash; healpy vgithub-devel documentation</title>
+    <link rel="stylesheet" href="../static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'github-devel',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../static/jquery.js"></script>
+    <script type="text/javascript" src="../static/underscore.js"></script>
+    <script type="text/javascript" src="../static/doctools.js"></script>
+    <link rel="top" title="healpy vgithub-devel documentation" href="../index.html" />
+    <link rel="up" title="pixelfunc – Pixelisation related functions" href="../healpy_pix.html" />
+    <link rel="next" title="healpy.pixelfunc.reorder" href="healpy.pixelfunc.reorder.html" />
+    <link rel="prev" title="healpy.pixelfunc.nest2ring" href="healpy.pixelfunc.nest2ring.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.reorder.html" title="healpy.pixelfunc.reorder"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.nest2ring.html" title="healpy.pixelfunc.nest2ring"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_pix.html" accesskey="U"><tt class="docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal"><span class="pre">pixelfunc</span></tt> &#8211; Pixelisation related functions</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="healpy-pixelfunc-ring2nest">
+<h1>healpy.pixelfunc.ring2nest<a class="headerlink" href="#healpy-pixelfunc-ring2nest" title="Permalink to this headline">¶</a></h1>
+<dl class="staticmethod">
+<dt id="healpy.pixelfunc.ring2nest">
+<em class="property">static </em><tt class="descclassname">pixelfunc.</tt><tt class="descname">ring2nest</tt><big>(</big><em>nside</em>, <em>ipix</em><big>)</big><a class="headerlink" href="#healpy.pixelfunc.ring2nest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert pixel number from RING ordering to NESTED ordering.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters :</th><td class="field-body"><p class="first"><strong>nside</strong> : int, scalar or array-like</p>
+<blockquote>
+<div><p>the healpix nside parameter</p>
+</div></blockquote>
+<p><strong>ipix</strong> : int, scalar or array-like</p>
+<blockquote>
+<div><p>the pixel number in RING scheme</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns :</th><td class="field-body"><p class="first"><strong>ipix</strong> : int, scalar or array-like</p>
+<blockquote class="last">
+<div><p>the pixel number in NESTED scheme</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-see-also admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="healpy.pixelfunc.nest2ring.html#healpy.pixelfunc.nest2ring" title="healpy.pixelfunc.nest2ring"><tt class="xref py py-obj docutils literal"><span class="pre">nest2ring</span></tt></a>, <a class="reference internal" href="healpy.pixelfunc.reorder.html#healpy.pixelfunc.reorder" title="healpy.pixelfunc.reorder"><tt class="xref py py-obj docutils literal"><span class="pre">reorder</span></tt></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">hpy</span><span class="o">.</span><span class="n">ring2nest</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1504</span><span class="p">)</span>
+<span class="go">1130</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">hpy</span><span class="o">.</span><span class="n">ring2nest</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="go">array([ 3,  7, 11, 15,  2,  1,  6,  5, 10,  9])</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">hpy</span><span class="o">.</span><span class="n">ring2nest</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="mi">11</span><span class="p">)</span>
+<span class="go">array([ 11,  13,  61, 253])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="healpy.pixelfunc.nest2ring.html"
+                        title="previous chapter">healpy.pixelfunc.nest2ring</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="healpy.pixelfunc.reorder.html"
+                        title="next chapter">healpy.pixelfunc.reorder</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../sources/generated/healpy.pixelfunc.ring2nest.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.reorder.html" title="healpy.pixelfunc.reorder"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="healpy.pixelfunc.nest2ring.html" title="healpy.pixelfunc.nest2ring"
+             >previous</a> |</li>
+        <li><a href="../index.html">healpy vgithub-devel documentation</a> &raquo;</li>
+          <li><a href="../healpy_pix.html" ><tt class="docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal docutils literal"><span class="pre">pixelfunc</span></tt> &#8211; Pixelisation related functions</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2008, C. Rosset.
+      Last updated on Sep 14, 2011.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

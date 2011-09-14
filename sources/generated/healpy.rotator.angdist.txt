@@ -1,0 +1,6 @@
+healpy.rotator.angdist
+======================
+
+.. currentmodule:: healpy
+
+.. automethod:: rotator.angdist
