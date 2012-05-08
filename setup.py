@@ -55,7 +55,14 @@ except:
     print ("Cannot check if compiler is clang")
 
 # Define the build directory
-hpx_cxx_dir = os.environ.get('HEALPIXCXXDIR', 'hpbeta')
+if os.path.isdir('hpbeta'):
+    hpx_cxx_dir = 'hpbeta'
+elif 'HEALPIXCXXDIR' in os.environ:
+    hpx_cxx_dir = os.environ['HEALPIXCXXDIR']
+elif 'HEALPIX' in os.environ:
+    hpx_cxx_dir = os.path.join(os.environ['HEALPIX'], 'src', 'cxx')
+else:
+    hpx_cxx_dir = os.path.join('..', 'cxx')
 
 # Command distclean to remove the build directory (both healpy and in hpbeta)
 # 
@@ -137,9 +144,10 @@ else:
     from numpy import get_include
     numpy_inc = get_include()
 
-def compile_healpix_cxx(target):
+def compile_healpix_cxx(target, hpx_cxx_dir):
     import os
     print "Compiling healpix_cxx (this may take a while)"
+    print "Using Healpix_cxx in directory : %s" % (os.path.abspath(hpx_cxx_dir))
     # Export necessary environment variables
     os.environ['HEALPIX_TARGET'] = target
     os.environ['HEALPIX_EXTRAFLAGS'] = HEALPIX_EXTRAFLAGS
@@ -179,10 +187,11 @@ do_compile = (sys.argv[1] in ['build', 'build_ext', 'build_clib',
               and not on_rtd)
 
 if do_compile:
-    compile_healpix_cxx(HEALPIX_TARGET)
+    compile_healpix_cxx(HEALPIX_TARGET, hpx_cxx_dir)
     if not ( isdir(healpix_cxx_inc) and
              isdir(healpix_cxx_lib) ):
-        raise IOError("No include and lib directory : needed for healpy !")
+        raise IOError("No include and lib directory in %s : needed for healpy !"
+                      % (os.path.abspath(hpx_cxx_dir)))
 
 ###############################################
 
