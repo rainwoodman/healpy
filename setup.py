@@ -54,7 +54,7 @@ try:
 except:
     print ("Cannot check if compiler is clang")
 
-# Define the build directory
+# Define the Healpix cxx directory
 if os.path.isdir('hpbeta'):
     hpx_cxx_dir = 'hpbeta'
 elif 'HEALPIXCXXDIR' in os.environ:
@@ -187,6 +187,16 @@ do_compile = (sys.argv[1] in ['build', 'build_ext', 'build_clib',
               and not on_rtd)
 
 if do_compile:
+    # Check existence of directory hpx_cxx_dir
+    hpx_env_msg = """You should define the directory where healpix cxx is present
+using environement variable HEALPIXCXXDIR."""
+    if not os.path.isdir(hpx_cxx_dir):
+        sys.stderr.write('Healpix cxx directory not found at %s\n'
+                         % (os.path.abspath(hpx_cxx_dir)))
+        sys.stderr.write('*' * 40)
+        sys.stderr.write('\n' + hpx_env_msg + '\n')
+        sys.stderr.write('*' * 40)
+        raise IOError("Unkown directory : %s" % (os.path.abspath(hpx_cxx_dir)))
     compile_healpix_cxx(HEALPIX_TARGET, hpx_cxx_dir)
     if not ( isdir(healpix_cxx_inc) and
              isdir(healpix_cxx_lib) ):
